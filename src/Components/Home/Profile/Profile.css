@@ -24,11 +24,9 @@
 .profile-details-name {
   text-align: justify;
   position: relative;
-  /* left: 50%; */
   justify-content: center;
   font-weight: bold;
   font-size: 50px;
-  /* transform: translate(-57%); */
 }
 
 .profile-details-role h1 {
