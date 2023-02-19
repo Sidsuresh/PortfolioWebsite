@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css";
+import "./Header.css";
 
 //React Icons
 import { AiFillProject } from "react-icons/ai";
@@ -31,7 +31,7 @@ const Header = () => {
           </li>
           <li>
             <a href="#Contact">
-              <FiPhoneCall /> <h7>Contact Me</h7>
+              <FiPhoneCall /> <h7>Contact</h7>
             </a>
           </li>
         </ul>

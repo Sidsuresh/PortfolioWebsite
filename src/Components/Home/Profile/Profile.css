@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-family: "Work Sans", sans-serif;
+}
+
+.profile-parent {
+  display: flex;
+  align-items: center;
+  color: hsl(0, 0, 20%);
+}
+
+.profile-details {
+  margin: 20px;
+  height: fit-content;
+  width: 700px;
+}
+
+.profile-details-name {
+  text-align: justify;
+  position: relative;
+  /* left: 50%; */
+  justify-content: center;
+  font-weight: bold;
+  font-size: 50px;
+  /* transform: translate(-57%); */
+}
+
+.profile-details-role h1 {
+  font-family: cursive;
+  font-weight: 300;
+}
+
+.profile-details-desc {
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px 0px 20px 0px;
+  width: 500px;
+}
+
+.resume-btn {
+  color: hsl(0, 0, 20%);
+  border-radius: 50px;
+  padding: 14px 0;
+  width: 160px;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 2px solid hsl(0, 0, 50%);
+  font-size: 15px;
+  background-color: transparent;
+}
+
+.resume-btn:hover {
+  color: #f3f5f8;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.cols-icon {
+  padding-left: 0px;
+  margin: 10px 5px 5px 0px;
+  font-size: 24px;
+}
+
+.cols-icon a {
+  margin-left: 0px;
+  padding-right: 12px;
+  color: black;
+}
+
+.profile-picture-background {
+  height: 300px;
+  width: 300px;
+  background-image: url("../../../Assets/Images/Photo.jpg");
+  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+  order: 1;
+  justify-self: center;
+  background-size: cover;
+  animation: profile_animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile_animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
