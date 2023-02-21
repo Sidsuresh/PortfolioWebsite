@@ -1,0 +1,82 @@
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: black;
+  text-align: left;
+  gap: 0%;
+  height: 100%;
+}
+
+.skill-heading {
+  color: darkslateblue;
+  text-decoration: underline;
+  position: relative;
+  left: 20%;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.skill-heading-2 {
+  color: darkslateblue;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.skill-list {
+  position: relative;
+  left: 20%;
+}
+
+.skill-list ul {
+  list-style: none;
+  margin: 0;
+}
+
+.skill-list-2 ul {
+  list-style: none;
+  margin: 0;
+}
+
+.skill-list li {
+  font-size: 1rem;
+}
+
+.skill-list-2 li {
+  font-size: 1rem;
+}
+
+.skill-list li::before {
+  content: "\2023";
+  color: darkorange;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.skill-list-2 li::before {
+  content: "\2023";
+  color: darkorange;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.skill-prog {
+  text-align: justify;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.skill-mlai {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.skill-wadev {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.skill-db {
+  grid-column: 2;
+  grid-row: 2;
+}

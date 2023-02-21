@@ -1,0 +1,59 @@
+.experience-container {
+  padding: 2%;
+  color: black;
+  height: 100%;
+  text-align: left;
+}
+
+.experience-list ul {
+  list-style: none;
+}
+
+.experience-list li {
+  margin: 15px;
+}
+
+.experience-header {
+  display: grid;
+  grid-template-columns: 0.75fr 0.25fr;
+}
+
+.experience-name {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 1.1rem;
+  color: darkslateblue;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.experience-date {
+  margin: 2%;
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 1rem;
+  font-weight: 100;
+  background-color: rgb(248, 115, 20);
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 20px;
+}
+
+.experience-title {
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative;
+  left: 3%;
+}
+
+.experience-content li::before {
+  content: "\2023";
+  color: darkorange;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.experience-content li {
+  margin: 0;
+  font-size: 0.9rem;
+}
