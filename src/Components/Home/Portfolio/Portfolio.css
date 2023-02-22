@@ -2,6 +2,7 @@
 
 .about-container {
   justify-content: space-evenly;
+  color: hsl(0, 0, 20%);
   flex-direction: row;
   font-family: "Poppins", sans-serif;
 }
