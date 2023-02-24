@@ -44,7 +44,6 @@
 .prev,
 .next {
   cursor: pointer;
-  z-index: 100;
   position: relative;
   top: -200px;
   width: auto;
@@ -86,7 +85,6 @@
   bottom: 5%;
   left: 0px;
   justify-content: center;
-  z-index: 200;
 }
 
 .dot {

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.contact-container {
+  margin-top: 104px;
+  color: hsl(0, 0, 20%);
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-title {
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.contact-content {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  background-image: url("../../../Assets/Home/Contact_Me.jpg");
+  background-size: 500px 400px;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  border-radius: 25px;
+  width: 80%;
+  min-height: 340px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
+  font-size: 1.2rem;
+  padding: 2.5%;
+  position: relative;
+  left: 50%;
+  transform: translate(-57%);
+  text-align: left;
+}
+
+label {
+  font-size: 20px;
+  margin: 1%;
+}
+
+input,
+textarea {
+  position: relative;
+  left: 90%;
+  transform: translate(-90%);
+  width: 40%;
+  padding: 1%;
+  color: black;
+  margin: 2%;
+  display: block;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: 450;
+  background-color: transparent;
+  font-family: cursive;
+  border: 2px solid hsl(0, 0, 20%);
+}
+
+textarea {
+  height: 70px;
+}
+
+input[type="submit"] {
+  margin-top: 2%;
+  border: 2px solid black;
+  color: black;
+  border-radius: 50px;
+  width: 160px;
+  height: 50px;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "Poppins SemiBold";
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}

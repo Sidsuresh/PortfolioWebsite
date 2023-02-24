@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .profile-container {
+  margin-top: 104px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,6 +39,7 @@
 .profile-details-desc {
   font-size: 20px;
   text-align: justify;
+  font-family: "Poppins", sans-serif;
   margin: 20px 0px 20px 0px;
   width: 500px;
 }

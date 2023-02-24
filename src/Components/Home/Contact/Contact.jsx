@@ -1,7 +1,74 @@
-import React from "react";
+import React, { useRef, useState, CSSProperties } from "react";
+import "./Contact.css";
+import emailjs from "@emailjs/browser";
+
+//Extra css
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    setIsLoading(true);
+
+    emailjs
+      .sendForm(
+        "service_m50ie16",
+        "template_ugnc5dr",
+        form.current,
+        "EbZ_a6KLGfcjQnNHI"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsLoading(false);
+          toast("Message was sent");
+        },
+        (error) => {
+          console.log(error.text);
+          setIsLoading(false);
+          toast("Some error occured");
+        }
+      );
+  }
+
+  return (
+    <div id="Contact" className="contact-container">
+      <div className="contact-title">CONTACT-ME...</div>
+      <div className="contact-content">
+        <div className="contact-form">
+          <form ref={form} onSubmit={sendEmail}>
+            <input
+              placeholder="Your Name"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+            <input
+              placeholder="Your Email"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <textarea
+              placeholder="Your Message"
+              id="msg"
+              name="msg"
+              required
+            ></textarea>
+            <input type="submit" value={isLoading ? "Sending ... " : "Send"} />
+          </form>
+        </div>
+      </div>
+      <ToastContainer />
+    </div>
+  );
 };
 
 export default Contact;

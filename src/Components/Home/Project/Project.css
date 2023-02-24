@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .project-container {
-  margin-top: 5%;
+  margin-top: 104px;
   padding: 0.1px;
   color: hsl(0, 0, 20%);
   font-weight: bold;
@@ -9,7 +9,7 @@
 }
 
 .project-heading {
-  margin-top: 5%;
+  margin-bottom: 2%;
   text-align: center;
   font-size: 40px;
   font-weight: 600;
